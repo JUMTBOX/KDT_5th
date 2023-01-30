@@ -14,7 +14,7 @@ li.lion {
   color: white;
 }
 
-div .lion {
+div.zoo .lion {
   font-weight: bold;
 }
 
@@ -22,6 +22,6 @@ div .lion {
   background-color: skyblue;
 }
 
-.lion ~ li {
+div.zoo > ul > .lion ~ li {
   background-color: orange;
 }
