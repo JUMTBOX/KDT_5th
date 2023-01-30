@@ -1,0 +1,15 @@
+[disabled] {
+  background-color: red;
+}
+
+[placeholder="이름"] {
+  background-color: orange;
+}
+
+input:not([placeholder]) {
+  background-color: blue;
+}
+
+/* [value] {
+  background-color: blue;
+} */
