@@ -14,12 +14,19 @@ const sack = [
 function quiz() {
   const sum = [];
 
+  // sack.map((numsack) => {
+  //   if (numsack.fake === false) {
+  //     sum.push(numsack.num * 10);
+  //   } else {
+  //     sum.push(numsack.num * 9);
+  //   }
+  //   return sum;
+  // });
+
   sack.map((numsack) => {
-    if (numsack.fake === false) {
-      sum.push(numsack.num * 10);
-    } else {
-      sum.push(numsack.num * 9);
-    }
+    numsack.fake === false
+      ? sum.push(numsack.num * 10)
+      : sum.push(numsack.num * 9);
     return sum;
   });
 
