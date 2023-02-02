@@ -1,0 +1,143 @@
+@import url(./reset.css);
+
+body {
+  background-image: url(./images/bg.jpg);
+}
+.container {
+  display: flex;
+}
+.heroes {
+  justify-content: center;
+  margin: 50px auto 0px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+}
+.heroes > .hero {
+  width: 80px;
+  height: 90px;
+  margin: 4px;
+  background-color: gray;
+  border: 3px solid white;
+  transform: skewX(-14deg);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.hero:hover {
+  background-color: orange;
+  border-color: orange;
+  transform: skew(-14deg) scale(1.1);
+  transition: transform 0.1s, background-color 0.5s, border-color 0.5s;
+  z-index: 1;
+}
+.wrapper {
+  display: flex;
+}
+img {
+  justify-content: center;
+  max-width: 300px;
+  margin: 20px auto;
+  width: 100vw;
+}
+.hero > .image {
+  width: 140%;
+  height: 100%;
+  background-image: url(./images/hero1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: skew(14deg) translateX(-10px);
+}
+.heroes *:nth-child(2) .image {
+  background-image: url(./images/hero2.png);
+}
+.heroes *:nth-child(3) .image {
+  background-image: url(./images/hero3.png);
+}
+.heroes *:nth-child(4) .image {
+  background-image: url(./images/hero4.png);
+}
+.heroes *:nth-child(5) .image {
+  background-image: url(./images/hero5.png);
+}
+.heroes *:nth-child(6) .image {
+  background-image: url(./images/hero6.png);
+}
+.heroes *:nth-child(7) .image {
+  background-image: url(./images/hero7.png);
+}
+.heroes *:nth-child(8) .image {
+  background-image: url(./images/hero8.png);
+}
+.heroes *:nth-child(9) .image {
+  background-image: url(./images/hero9.png);
+}
+.heroes *:nth-child(10) .image {
+  background-image: url(./images/hero10.png);
+}
+.heroes *:nth-child(11) .image {
+  background-image: url(./images/hero11.png);
+}
+.heroes *:nth-child(12) .image {
+  background-image: url(./images/hero12.png);
+}
+.heroes *:nth-child(13) .image {
+  background-image: url(./images/hero13.png);
+}
+.heroes *:nth-child(14) .image {
+  background-image: url(./images/hero14.png);
+}
+.heroes *:nth-child(15) .image {
+  background-image: url(./images/hero15.png);
+}
+.heroes *:nth-child(16) .image {
+  background-image: url(./images/hero16.png);
+}
+.heroes *:nth-child(17) .image {
+  background-image: url(./images/hero17.png);
+}
+.heroes *:nth-child(18) .image {
+  background-image: url(./images/hero18.png);
+}
+.heroes *:nth-child(19) .image {
+  background-image: url(./images/hero19.png);
+}
+.heroes *:nth-child(20) .image {
+  background-image: url(./images/hero20.png);
+}
+.heroes *:nth-child(21) .image {
+  background-image: url(./images/hero21.png);
+}
+.heroes *:nth-child(22) .image {
+  background-image: url(./images/hero22.png);
+}
+.heroes *:nth-child(23) .image {
+  background-image: url(./images/hero23.png);
+}
+.heroes *:nth-child(24) .image {
+  background-image: url(./images/hero24.png);
+}
+.heroes *:nth-child(25) .image {
+  background-image: url(./images/hero25.png);
+}
+.heroes *:nth-child(26) .image {
+  background-image: url(./images/hero26.png);
+}
+.heroes *:nth-child(27) .image {
+  background-image: url(./images/hero27.png);
+}
+.heroes *:nth-child(28) .image {
+  background-image: url(./images/hero28.png);
+}
+.heroes *:nth-child(29) .image {
+  background-image: url(./images/hero29.png);
+}
+.heroes *:nth-child(30) .image {
+  background-image: url(./images/hero30.png);
+}
+.heroes *:nth-child(31) .image {
+  background-image: url(./images/hero31.png);
+}
+.heroes *:nth-child(32) .image {
+  background-image: url(./images/hero32.png);
+}
