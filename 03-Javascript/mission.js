@@ -17,9 +17,9 @@ let empStr4 = "";
 let newStr = [...str];
 
 for (let st of newStr) {
-  byteKr.test(st) === true ? kr++ : emp++;
+  byteKr.test(st) === true ? (kr += 2) : (emp += 1);
 
-  let byte = kr * 2 + emp;
+  let byte = kr + emp;
 
   if (byte <= 80) {
     empStr += st;
