@@ -1,39 +1,39 @@
-// function helloFunc() {
-//   console.log("안녕");
-// }
+function helloFunc() {
+  console.log("안녕");
+}
 
-// helloFunc();
+helloFunc();
 
-// function returnFunc() {
-//     console.log("return");
-//   return console.log("return to base");
-// }
+function returnFunc() {
+  console.log("return");
+  return console.log("return to base");
+}
 
-// let str = returnFunc();
+let str = returnFunc();
 
-// let noNameFunc = function () {
-//   return console.log("noName");
-// };
+let noNameFunc = function () {
+  return console.log("noName");
+};
 
-// let str = noNameFunc();
+let str = noNameFunc();
 
-// function sayHello(name) {
-//   console.log(`Hello~${name}`);
-// }
+function sayHello(name) {
+  console.log(`Hello~${name}`);
+}
 
-// sayHello("henry");
+sayHello("henry");
 
-// function sum(num1, num2) {
-//   return num1 + num2;
-// }
+function sum(num1, num2) {
+  return num1 + num2;
+}
 
-// console.log(sum(10, 20));
+console.log(sum(10, 20));
 
-// const squre = (num = 2) => {
-//   return num ** 2;
-// };
+const squre = (num = 2) => {
+  return num ** 2;
+};
 
-// console.log(squre());
+console.log(squre());
 
 //실습!
 const triangle = (밑변, 높이) => {
