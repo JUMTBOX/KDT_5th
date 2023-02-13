@@ -58,6 +58,7 @@ let triangle = new Triangle(10, 20);
 
 class Circle extends Shape {
   constructor(radius) {
+    super();
     this.radius = radius;
   }
   getArea() {
