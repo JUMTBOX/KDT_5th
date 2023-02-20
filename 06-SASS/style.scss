@@ -1,0 +1,80 @@
+// RESET
+@import "reset";
+@import "mixin";
+
+$body-bg: #111;
+$wrap-border: #ddd;
+$wrap__item-bg: #222;
+$wrap__item_h2: #333;
+$wrap__item_p: #777;
+$btn-bg: #555;
+$btn-font: white;
+$wrap__item-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+
+//MAIN
+body {
+  background-color: $body-bg;
+
+  .wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 100px;
+    border: 2px solid $wrap-border;
+    perspective: 500px;
+    &:hover {
+      .item {
+        transform: none;
+        transition: 0.6s;
+        opacity: 1;
+      }
+    }
+
+    .item {
+      width: 300px;
+      padding: 30px;
+      background-color: $wrap__item-bg;
+      margin: 50px;
+      border-radius: 15px;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+      transform: translateY(100px) rotateY(180deg);
+      transition: 0.6s;
+      opacity: 0;
+    }
+
+    h2 {
+      font: bold 30px/1 "arial";
+      margin-bottom: 20px;
+      @if $wrap__item-bg == #fff {
+        color: $wrap__item_h2;
+      } @else {
+        color: white;
+      }
+      //   color: $wrap__item_h2;
+    }
+    p {
+      font: normal 16px/1.5 "arial";
+      //   color: $wrap__item_p;
+      @if $wrap__item-bg ==#fff {
+        color: $wrap__item_p;
+      } @else {
+        color: white;
+      }
+    }
+
+    $bgColors: (orange, hotpink, aqua, lightgreen);
+    $interval: 0.5s;
+    @each $el in $bgColors {
+      $index: index(
+        $list: $bgColors,
+        $value: $el,
+      );
+      &:nth-child(#{$index}) {
+        transition-delay: $interval * $index;
+        a {
+          @include button($bg-color: $el);
+        }
+      }
+    }
+  }
+}
