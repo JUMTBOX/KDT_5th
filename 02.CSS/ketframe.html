@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/keyframe.css" />
+  </head>
+  <body>
+    <div></div>
+
+    <script>
+      //   fetch("https://jsonplaceholder.typicode.com/users")
+      //     .then((res) => res.json())
+      //     .then((data) => {
+      //       data.map((item) => {
+      //         let mainData = JSON.stringify(item);
+      //         console.log(mainData);
+      //         window.localStorage.setItem("userInfo", `${mainData}`);
+      //       });
+      //       let getItem = window.localStorage.getItem("userInfo");
+      //       let item = JSON.parse(getItem);
+      //       console.log(item);
+      //     });
+      window.localStorage.clear();
+      window.localStorage.setItem("number", "num");
+      window.localStorage.setItem("string", "str");
+      window.localStorage.setItem("object", "obj");
+      window.localStorage.setItem("array", "arr");
+      window.localStorage.setItem("boolean", "bool");
+
+      for (let i = 0; i < window.localStorage.length; i += 1) {
+        let key = window.localStorage.key(i);
+        let value = window.localStorage.getItem(key);
+        // console.log(`${key}의 value는 ${value}`);
+      }
+      let con = window.localStorage.valueOf();
+      console.log(con);
+    </script>
+  </body>
+</html>
