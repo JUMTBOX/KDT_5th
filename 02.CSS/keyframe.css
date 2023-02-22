@@ -1,0 +1,38 @@
+div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: blueviolet;
+  transform: translate(0, 0);
+}
+
+body:active div {
+  animation: animation2 5s infinite linear;
+}
+
+@keyframes animation {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(500px, 0);
+  }
+}
+
+@keyframes animation2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(500px, 0);
+  }
+  50% {
+    transform: translate(500px, 500px);
+  }
+  75% {
+    transform: translate(0, 500px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
