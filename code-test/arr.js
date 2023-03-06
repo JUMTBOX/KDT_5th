@@ -72,29 +72,29 @@
 //   [0, 0]
 // );
 
-// console.log(result1);
+console.log(result1);
 
-// // 실습
-// let numArr = [];
-// for (let i = 1; i <= 100; i += 1) {
-//   numArr.push(i);
-// }
-// const answer = numArr.reduce((acc, curr) => acc + curr, 0);
+// 실습
+let numArr = [];
+for (let i = 1; i <= 100; i += 1) {
+  numArr.push(i);
+}
+const answer = numArr.reduce((acc, curr) => acc + curr, 0);
 
-// console.log(answer);
+console.log(answer);
 
-// const fruits = ["사과", "바나나", "포도", "귤", "망고"];
+const fruits = ["사과", "바나나", "포도", "귤", "망고"];
 
-// function conLog(...rest) {
-//   rest.map((el) => {
-//     console.log(el);
-//   });
-// }
+function conLog(...rest) {
+  rest.map((el) => {
+    console.log(el);
+  });
+}
 
-// // conLog(...fruits);
+// conLog(...fruits);
 
-// const str = "apple";
-// const newStr = [...str];
-// const strToArr = str.split("");
+const str = "apple";
+const newStr = [...str];
+const strToArr = str.split("");
 
 // console.log(newStr, strToArr);
